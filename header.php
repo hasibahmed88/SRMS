@@ -31,7 +31,7 @@ include "include/autoload.php";
   <body>
 
 <div class="container-fluid m-0 p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
     <h2><a class="navbar-brand" href="dashboard.php"><strong>NIET</strong></a></h2>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -77,12 +77,11 @@ include "include/autoload.php";
         <p class="text-muted">APPEARANCE</p>
         <div class="menu-list">
           <ul class="p-0 p-0">
-            <li class="">
-              <a href="#" data-toggle="collapse" data-target="#departments" ><span><i class="fas fa-file-alt"></i></span>&nbsp;&nbsp;Departments &nbsp; &nbsp;<span class="text-right"><i class="fas fa-caret-down"></i></span></a>
+          <li >
+              <a href="department.php" data-toggle="collapse" data-target="#departments" ><span><i class="fas fa-file-alt"></i></span>&nbsp;&nbsp;Department &nbsp; &nbsp;<span class="text-right"><i class="fas fa-caret-down"></i></span></a>
               <div class="collapse sub-menu" id="departments">
                 <ul class="m-0 p-0">
-                  <li class="pl-2"><a href="add_department.php"><small><span><i class="fas fa-plus"></i></span>&nbsp;&nbsp;Add Department</small></a></li>
-                  <li class="pl-2"><a href="all_department.php"><small><span><i class="fas fa-align-justify"></i></span>&nbsp;&nbsp;All Department</small></a></li>
+                  <li class="pl-2"><a href="department.php"><small><span><i class="fas fa-align-justify"></i></span>&nbsp;&nbsp;View department</small></a></li>
                 </ul>
               </div>
             </li>
