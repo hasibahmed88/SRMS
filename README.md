@@ -8,7 +8,6 @@
 	<li>Javascript</li>
 	<li>Jquery plugin</li>
 	<li>Fontawesome Icon</li>
-	<li>Fontawesome Icon</li>
 	<br>
 	<li>PHP oop</li>
 	<li>MySql</li>
