@@ -1,6 +1,4 @@
 <?php
-include "classes/Cookie.class.php";
-$access = Cookie::InactiveUser();
 include "include/config.php";
 include "classes/Database.class.php";
 include "classes/User.class.php";

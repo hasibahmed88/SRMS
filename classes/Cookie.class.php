@@ -20,6 +20,7 @@ class Cookie{
     public function InactiveUser(){
         if (!isset($_COOKIE['USSD'])) {
             header("location: index.php");
+            exit();
         }
     }
 

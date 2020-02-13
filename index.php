@@ -1,7 +1,6 @@
 <?php 
   include "include/config.php";
   include "include/autoload.php";
-  $access = Cookie::ActiveUser();
  ?>
 <!DOCTYPE html>
 <html lang="en">
