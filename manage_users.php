@@ -63,6 +63,7 @@ if (isset($_REQUEST['result_search_btn'])) {
 <?php 
 	$count_row = 1;
 	while($sData = $search_result->fetch_array()){
+		$id = $sData['id'];
 		$department = $sData['department'];
 		$roll = $sData['roll'];
 
@@ -76,7 +77,7 @@ if (isset($_REQUEST['result_search_btn'])) {
 		<td>
 			<center>
 			<a href="edit_result.php?id=<?php echo $id ?>" class="btn btn-info btn-sm"><span><i class="fas fa-edit"></i></span></a>
-			<a href="process/delete_result_core.php?id=<?php echo $id ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?') "><span><i class="fas fa-trash-alt"></i></span></a>
+			<a href="delete_user.php?id=<?php echo $id ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?') "><span><i class="fas fa-trash-alt"></i></span></a>
 			</center>
 		</td>
 	</tr>
