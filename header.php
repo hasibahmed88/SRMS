@@ -1,4 +1,10 @@
 <?php 
+if (isset($_COOKIE['USSD'])) {
+  $username = $_COOKIE['USSD'];
+}
+session_start();
+$_SESSION['name'] = $username;
+
 include "classes/Cookie.class.php";
 $access = Cookie::InactiveUser();
 include "include/config.php";
