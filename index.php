@@ -2,7 +2,6 @@
   include "include/config.php";
   include "include/autoload.php";
   $access = Cookie::ActiveUser();
-
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,12 +16,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,600,600i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <title>NIET</title>
-    
   </head>
   <body style="background:#f9f9f9">
-
 <div class="my-4">
     <h2 class="text-center text-dark">National Institute of Engineering & Technology</h2>
 </div>
@@ -32,9 +28,7 @@
       <br>
       <h5 class="text-center">Student Login</h5> <br>
 
-
 <!-- Student Login -->
-
       <div class="border bg-light  rounded p-4" style="box-shadow: 0px 0px 30px 0px #00000040">
 <?php
   if (isset($_REQUEST['noresultfound'])) {
@@ -55,17 +49,13 @@
             </div>
             
           </form>
-
       </div>
-
     </div>
 <!-- Admin Login -->
 <?php
-
   $admin = new Admin();
   if (isset($_REQUEST['admin_login_btn'])) {
     $admin_login = $admin->AdminLogin($_REQUEST);
-
     if ($admin_login==true) {
       header("location: dashboard.php");
       return true;
@@ -87,7 +77,6 @@
         echo "<h6 class='text-center text-danger'>Username or password incorrect!</h6>";
       }
     ?>
-    
           <div class="form-group">
             <label for="username"><strong>Username</strong></label>
             <input id="username" name="admin_username" type="text" class="form-control form-control-sm" required>
@@ -104,18 +93,11 @@
       </div>
        <br>
        <br>
-
     </div>
   </div>
 </div>
-
-
         <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-
-    </script>
 
   </body>
 </html>
